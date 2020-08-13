@@ -1,11 +1,24 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const StyledDiv = styled.div`
+   text-align: center;
+   width: 100%;
+   background-color: black;
+   border: 3px solid orange;
+`
+const StyledImg = styled.img`
+  border: 1px solid black;
+`
+
+
 
 function Photo(props){
     const { data } = props
     return(
-       <div className="image-day">
-           <img src={ data.url} alt={data.title}/>
-       </div>
+       <StyledDiv>
+           <StyledImg src={ data.url} alt={data.title} width='70%' />
+       </StyledDiv>
     )
 }
 

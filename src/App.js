@@ -4,6 +4,8 @@ import axios from 'axios'
 import Header from './Header'
 import Photo from './Photo'
 import Card from './Card'
+import styled from 'styled-components'
+
 
 function App() {
   const [data, setData] = useState({})
